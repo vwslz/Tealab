@@ -2,6 +2,10 @@
   background-color: #990000;
 }
 
+.text-seawolf {
+  color: #990000;
+}
+
 .square {
     width: 100%;
     padding-bottom: 100%;
@@ -11,4 +15,21 @@
 
 .height-bottom {
   height: 100px;
+}
+
+.text-link {
+  color: black;
+}
+
+a h4 {color: #990000 !important;}
+a h4:hover  {
+  text-decoration: underline ;
+}
+
+.namelink, .namelink:visited,.namelink:hover,.namelink:active {
+   text-decoration:none;
+}
+
+.list-seawolf .list-group-item a {
+  color: #990000;
 }
