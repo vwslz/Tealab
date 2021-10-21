@@ -34,6 +34,10 @@ a h4:hover  {
   color: #990000;
 }
 
+.list-seawolf .list-group-item a:first-child {
+  font-weight: bold;
+}
+
 .img-auto {
   width: auto;
   height: auto;
