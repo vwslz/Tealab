@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <title>TEALAB</title>
@@ -14,16 +15,16 @@
   <body>
     <div class="bg-seawolf">
       <div class="container">
-        <div class="text-center text-white py-4 display-6"><strong>Theoretical and Experimental Algorithmics Lab (TEALab)</strong></div>
+        <div class="text-white py-4 display-6"><strong>Theoretical and Experimental Algorithmics Lab (TEALab)</strong></div>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-seawolf">
-      <div class="container px-5">
+      <div class="container  px-1">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav mx-right">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
@@ -36,23 +37,109 @@
             <li class="nav-item">
               <a class="nav-link" href="publications.html">Publications</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Opportunities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <body>
+      <div class="container">
+        <div class="container-fluid content-row text-left">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-lg-3 p-1">
+              <img src="img/project_stencil.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="col-12 col-sm-8 col-lg-9 p-0">
+              <h4 class="text-seawolf">Fast Stencil Computation</h4>
+              <p class="card-text">
+                Stencil computations are widely used to simulate the change of
+                state of physical systems across a multidimensional grid over
+                multiple timesteps. The state-of-the-art techniques in this
+                area fall into three groups: cache-aware tiled looping
+                algorithms, cache-oblivious divide-and-conquer trapezoidal
+                algorithms, and Krylov subspace methods.
+
+              </p>
+
+              <ul class="list-group px-3">
+                <li>
+                  <a href="https://arxiv.org/pdf/2105.06676" class="seawolflink">Fast Stencil Computations using Fast Fourier Transforms</a>&nbsp;
+                  <a href="https://dl.acm.org/doi/10.1145/3409964.3461803" class="text-seawolf"><i class="fas fa-file-pdf"></i></a>
+                  <br>
+                  We give the first algorithms that use fast Fourier transforms to compute final grid data by
+                evolving the initial data for many timesteps at once. Our
+                algorithms handle both periodic and aperiodic boundary
+                conditions, and achieve polynomially better performance bounds than
+                all other existing solutions.
+              </li>
+                <!-- <li>
+                  <a href="#" class="seawolflink"> Stencil Computations using Gaussian Approximations</a>&nbsp;
+                  <br>
+                  We use random walks and
+                  Gaussian approximations to perform linear stencil computations
+                  and thereby improves the work asymptotically. We also improve
+                  the span (parallel running time) asymptotically from the
+                  current state of the art.
+                </li>
+                <li>
+                  <a href="#" class="seawolflink">
+                    Fourst: A code generator for FFT-based fast stencil computations
+                  </a>&nbsp;
+                  <br>
+                  we present Fourst – a fast Fourier transform-based compiler
+                  for time iterated linear periodic and aperiodic stencil
+                  computations.
+                </li> -->
+              </ul>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+
+          <hr class="my-1"/>
+
+          <div class="col-12 col-sm-4 col-lg-3 p-1">
+            <img src="img/project_binary_reduction.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="col-12 col-sm-8 col-lg-9 p-0">
+            <a class="text-dark namelink" href="https://dl.acm.org/doi/pdf/10.1145/3409964.3461802?casa_token=m8SIf6CfVekAAAAA:aiyEsErC4nDcLjVzBjrZC93TIwhXEt6zOJ-FUqKMZNIqxqZJOUvCMM-6Mt2TreOdjRZsC-t-DQ">
+              <h4>Cache-efiicient Low-span Divide and Conquer Parallel Algorithms</h4>
+            </a>
+            <p class="card-text">
+              The binary-forking model is a parallel computation model in
+              which a thread can fork a concurrent child thread,
+              recursively and asynchronously. The binary-forking model
+              realistically captures the performance of parallel algorithms
+              implemented using modern multithreaded programming languages
+              on multicore shared-memory machines.
+            </p>
+            <ul class="list-group px-3">
+              <li>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3409964.3461802" class="seawolflink">
+                  Low-Span Parallel Algorithms for the Binary-Forking Model
+                </a>&nbsp;
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3409964.3461802?casa_token=m8SIf6CfVekAAAAA:aiyEsErC4nDcLjVzBjrZC93TIwhXEt6zOJ-FUqKMZNIqxqZJOUvCMM-6Mt2TreOdjRZsC-t-DQ" class="seawolflink">
+                  <i class="fas fa-file-pdf"></i>
+                </a>
+                <br>
+                We showed that in the
+                binary-forking model we can achieve optimal or near-optimal
+                span with negligible or no asymptotic blowup in work for
+                comparison-based sorting, Strassen’s matrix multiplication,
+                and the Fast Fourier Transform.
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer bg-seawolf">
       <div class="container height-bottom">
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script
   </body>
 </html>

@@ -21,6 +21,17 @@
   color: black;
 }
 
+/* a h3 {color: #990000 !important;} */
+.tablink, .tablink:visited {
+  color: #990000 !important;
+}
+/* .tablink, .tablink:visited, .tablink:hover, .tablink:active {
+   text-decoration:none;
+} */
+.tablink:hover, .tablink:active{
+  color: #c20000 !important;
+}
+
 a h4 {color: #990000 !important;}
 a h4:hover  {
   text-decoration: underline ;
@@ -28,6 +39,11 @@ a h4:hover  {
 
 .namelink, .namelink:visited,.namelink:hover,.namelink:active {
    text-decoration:none;
+}
+
+.seawolflink, .seawolflink:visited,.seawolflink:hover,.seawolflink:active {
+   text-decoration:none;
+   color: #990000;
 }
 
 .list-seawolf .list-group-item a {
@@ -41,4 +57,21 @@ a h4:hover  {
 .img-auto {
   width: auto;
   height: auto;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.card{
+  display: flex;
+  padding: 3em;
+  margin-right: 3em;
+}
+
+.toogle, .toogle:visited,.toogle:hover,.toogle:active {
+  text-decoration:none;
+  color: black;
+  padding: 0px;
 }
